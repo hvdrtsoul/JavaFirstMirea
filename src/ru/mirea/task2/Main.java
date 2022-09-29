@@ -1,5 +1,7 @@
 package ru.mirea.task2;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Shape testShape = new Shape();
@@ -18,5 +20,26 @@ public class Main {
 
         TestDog testTestDog = new TestDog();
         testTestDog.addDog(testDog);
+
+        ArraySwapper arraySwapper = new ArraySwapper();
+        String[] testArray = {"Glitter", "shines", "diamond"};
+
+        arraySwapper.array = testArray;
+        arraySwapper.swapArray();
+
+        for(String s : arraySwapper.array)
+            System.out.println(s);
+
+        PokerCropie pokerCropie = new PokerCropie();
+        pokerCropie.shuffle();
+
+        System.out.println("How many people?");
+        Scanner input = new Scanner(System.in);
+
+        int peopleNumber = input.nextInt();
+        pokerCropie.giveCards(peopleNumber);
+
+        HowMany howMany = new HowMany();
+        howMany.countWords();
     }
 }

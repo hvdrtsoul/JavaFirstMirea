@@ -3,16 +3,16 @@ package ru.mirea.task1;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         int[] test = {1, 2, 3};
 
         countSum(test);
+        countSumInput();
         printArgs(args);
         printHarmonica();
-        getRandomArray();
-        System.out.println(getFactorial(19));
     }
 
     public static void countSum(int[] input) {
@@ -23,24 +23,65 @@ public class Main {
         }
 
         System.out.println("Sum using for: " + result);
+        System.out.println("Average is: " + (float)result / input.length);
+    }
 
-        result = 0;
+    public static void countSumInput(){
+        int[] array = new int[1000];
+        int length;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please, enter array size:");
+        length = input.nextInt();
+
+        System.out.println("Enter array elements one by one:");
+        for(int i = 0;i < length;++i){
+            array[i] = input.nextInt();
+        }
+
+        int result = 0;
+        int min=0, max=0;
+
         int i = 0;
 
-        while (i < input.length) {
-            result += input[i];
+        while(i < length) {
+            result += array[i];
+            if(i == 0){
+                min = array[i];
+                max = array[i];
+            }
+            else{
+                if(array[i] < min)
+                    min = array[i];
+                else if(array[i] > max)
+                    max = array[i];
+            }
+
             ++i;
         }
 
         System.out.println("Sum using while: " + result);
+        System.out.println("Max element: " + max);
+        System.out.println("Min element: " + min);
 
         result = 0;
         i = 0;
 
-        do {
-            result += input[i];
+        do{
+            result += array[i];
+            if(i == 0){
+                min = array[i];
+                max = array[i];
+            }
+            else{
+                if(array[i] < min)
+                    min = array[i];
+                else if(array[i] > max)
+                    max = array[i];
+            }
+
             ++i;
-        } while (i < input.length);
+        }while(i < length);
 
         System.out.println("Sum using do while: " + result);
     }
