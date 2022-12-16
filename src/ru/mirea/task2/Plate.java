@@ -1,6 +1,6 @@
 package ru.mirea.task2;
 
-public class Plate extends Dish{
+public class Plate{
 
     private float width;
     private String foodInside;

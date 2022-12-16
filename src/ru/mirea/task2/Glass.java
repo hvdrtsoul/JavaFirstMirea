@@ -1,6 +1,6 @@
 package ru.mirea.task2;
 
-public class Glass extends Dish{
+public class Glass{
 
     private float height;
     private String liquidInside;
