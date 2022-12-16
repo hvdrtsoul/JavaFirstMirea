@@ -1,7 +1,7 @@
 package ru.mirea.task17;
 
 public class EmployeeView {
-    public void printEmployeeDetails(String name, int id, int salary){
+    public void printEmployeeDetails(String name, int id, int salary) {
         System.out.println("Employee:");
         System.out.println("Name: " + name);
         System.out.println("Id: " + id);
