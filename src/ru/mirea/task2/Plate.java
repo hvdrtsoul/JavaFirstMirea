@@ -4,6 +4,8 @@ public class Plate{
 
     private float width;
     private String foodInside;
+    public boolean isEmpty;
+    private boolean isClear;
 
     public void putFood(String foodName) {
         this.foodInside = foodName;
@@ -21,5 +23,8 @@ public class Plate{
 
     public String getFoodInside() {
         return foodInside;
+    }
+
+    public void wash() {
     }
 }

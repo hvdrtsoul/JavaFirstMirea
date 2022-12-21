@@ -4,6 +4,8 @@ public class Glass{
 
     private float height;
     private String liquidInside;
+    private boolean isClear;
+    public boolean isEmpty;
 
     public void pourLiquid(String liquidName){
         this.liquidInside = liquidName;
@@ -21,5 +23,8 @@ public class Glass{
 
     public String getLiquidInside() {
         return liquidInside;
+    }
+
+    public void wash() {
     }
 }
