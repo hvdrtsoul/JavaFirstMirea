@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //checkString("I like Java!!!");
-        //checkPerson();
+        checkPerson();
         //testShirt();
         testWordsAlligner();
     }
