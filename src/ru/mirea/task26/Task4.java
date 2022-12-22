@@ -8,5 +8,7 @@ public class Task4 {
         hashMap.put("name", "Furkan");
         hashMap.put("surname", "Duyan");
         hashMap.put("age", "19");
+
+        System.out.println(hashMap.get("name"));
     }
 }

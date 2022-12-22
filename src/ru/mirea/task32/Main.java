@@ -9,14 +9,14 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        MenuItem dish1 = new Dish(3, "Стейк", "Описание1");
-        MenuItem dish2 = new Dish(3, "Цезарь", "Описание2");
-        MenuItem dish3 = new Dish(2, "Суп грибной", "Описание3");
-        MenuItem dish4 = new Dish(3, "Плов", "Описание4");
-        MenuItem dish5 = new Dish(4, "Пельмени", "Описание5");
-        MenuItem drink1 = new Drink(1, "Липтон", "Описание6", 0, DrinkTypeEnum.GREEN_TEA);
-        MenuItem drink2 = new Drink(4, "Вино красное", "Описание7", 0.15, DrinkTypeEnum.WINE);
-        MenuItem drink3 = new Drink(9, "Святой источник", "Описание8", 0, DrinkTypeEnum.WATER);
+        MenuItem dish1 = new Dish(3, "Стейк", "Описание стейка");
+        MenuItem dish2 = new Dish(3, "Цезарь", "Описание цезаря");
+        MenuItem dish3 = new Dish(2, "Суп", "Описание супа");
+        MenuItem dish4 = new Dish(3, "Плов", "Вкусный плов");
+        MenuItem dish5 = new Dish(4, "Пельмени", "Настоящие пельмени");
+        MenuItem drink1 = new Drink(1, "Чай", "Описание чая", 0, DrinkTypeEnum.GREEN_TEA);
+        MenuItem drink2 = new Drink(4, "Вино", "Черное вино", 0.15, DrinkTypeEnum.WINE);
+        MenuItem drink3 = new Drink(9, "Bon aqua", "Expensive water", 0, DrinkTypeEnum.WATER);
         TableOrdersManager tm = new TableOrdersManager();
         tm.add(new TableOrder(), 3);
         tm.add(new TableOrder(), 5);

@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-        MenuItem dish1 = new Dish(3, "Стейк", "Описание1");
-        MenuItem dish2 = new Dish(3, "Цезарь", "Описание2");
-        MenuItem dish3 = new Dish(2, "Суп грибной", "Описание3");
-        MenuItem dish4 = new Dish(3, "Плов", "Описание4");
-        MenuItem dish5 = new Dish(4, "Пельмени", "Описание5");
-        MenuItem drink1 = new Drink(1, "Липтон", "Описание6", 0, DrinkTypeEnum.GREEN_TEA);
-        MenuItem drink2 = new Drink(4, "Вино красное", "Описание7", 0.15, DrinkTypeEnum.WINE);
-        MenuItem drink3 = new Drink(9, "Святой источник", "Описание8", 0, DrinkTypeEnum.WATER);
+        MenuItem dish1 = new Dish(3, "Стейк", "Описание стейка");
+        MenuItem dish2 = new Dish(3, "Цезарь", "Описание цезаря");
+        MenuItem dish3 = new Dish(2, "Суп грибной", "Описание грибного супа");
+        MenuItem dish4 = new Dish(3, "Плов", "Описание плова");
+        MenuItem dish5 = new Dish(4, "Пельмени", "Описание пельменей");
+        MenuItem drink1 = new Drink(1, "Чай", "Описание чая", 0, DrinkTypeEnum.GREEN_TEA);
+        MenuItem drink2 = new Drink(4, "Вино", "Описание вина", 0.15, DrinkTypeEnum.WINE);
+        MenuItem drink3 = new Drink(9, "Bon aqua", "Описание воды", 0, DrinkTypeEnum.WATER);
         TableOrdersManager tm = new TableOrdersManager();
         tm.add(new TableOrder(), 3);
         tm.add(new TableOrder(), 5);
